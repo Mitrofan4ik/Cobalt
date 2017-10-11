@@ -1,0 +1,11 @@
+// START: content
+.content {
+  display: block;
+  &-row {
+    display: block;
+    font-size: 0;
+    width: 100%;
+    overflow: auto;
+  }
+}
+// EEND: content

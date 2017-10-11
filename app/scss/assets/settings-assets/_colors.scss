@@ -1,5 +1,7 @@
 $colors: ( 
-    'primary': #fff
+    'primary': #fff,
+    'gray': #ccc,
+    'dark-grey': #4a4a4a
 );
 
 @function color($color) {

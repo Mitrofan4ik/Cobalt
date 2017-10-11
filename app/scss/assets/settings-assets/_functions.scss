@@ -1,7 +1,0 @@
-@mixin headerIsFixed($isHeaderFixed) {
-    @if($isHeaderFixed) {
-        body.customize-support .site-header {
-            top: 32px;
-        }
-    }
-}

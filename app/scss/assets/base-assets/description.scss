@@ -1,0 +1,89 @@
+// START: description
+.description {
+  padding: 20px;  
+  &-text {
+    &__title {
+      font-family: 'Roboto-Bold';
+      font-size: 22px;
+      color: color('dark-gray');
+      margin-bottom: 20px;
+      display: block;
+    }
+    &__desc {
+      font-family: 'Roboto-Regular';
+      font-size: 16px;
+      color: color('dark-gray');
+      line-height: 1.3;
+      margin-bottom: 20px;
+      width: 60%;
+    }
+  }
+  &-action {
+    padding: 20px 0;
+  }
+}
+.btn {
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  color: color('primary');
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: color('dark-grey');
+  display: inline-block;
+  transition: all 0.15s ease-in;
+  &:hover {
+    box-shadow: 1px 4px 8px #686868;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 1px 4px 8px #686868;
+  }
+}
+
+.sort-card {
+  display: inline-block;
+  position: relative;
+  margin-left: 60px;
+  &__title {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    color: color('primary');
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: color('dark-grey');
+    &:hover {
+      box-shadow: 1px 4px 8px #686868;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 1px 4px 8px #686868;
+    }
+  }
+  &-list {
+    position: absolute;
+    z-index: 9;
+    top: 36px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+    &__item {
+      font-family: 'Roboto-Regular';
+      color: color('gray');
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      background: color('dark-grey');
+      transition: all 0.15s ease-in;
+      &:hover {
+        background: yellow;
+        color: color('dark-grey');
+      }
+      &:focus {
+        background: yellow;
+        color: color('dark-grey');
+        outline: none;
+      }
+    }
+  }
+}
+// END: description
