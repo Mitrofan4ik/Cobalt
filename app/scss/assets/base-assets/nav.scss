@@ -1,37 +1,114 @@
 // START: nav
-.nav {
-  width: 200px;
+.nav-hidden {
+  width: 370px;
   height: 100%;
-  background: #4A4A4A;
   padding: 30px 15px;
-  box-shadow: 4px 0px 11px 4px #7c7c7c;
+  padding-left: 110px;
+  padding-top: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 97;
+  display: block;
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 0 100% 100% 0;
+    top: 0;
+    right: 0px;
+    width: 370px;
+    height: 100%;
+    background: #1e2124;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  &-title {
+    color: color('primary');
+    font-family: 'Roboto-Bold';
+    font-size: 35px;
+    display: block;
+    margin-bottom: 80px;
+    padding-left: 15px;
+  }
+  &-list {
+    &__item {
+      font-family: 'Roboto-Bold';
+      color: color('gray');
+      display: table;
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: all 0.15s ease-in;
+      margin-bottom: 10px;
+      font-size: 20px;
+      &:hover {
+        background: color('active');
+        color: #000;
+        font-family: 'Roboto-Bold';
+        box-shadow: 2px 4px 16px -3px #000;
+      }
+      &:focus {
+        background: color('active');
+        font-family: 'Roboto-Bold';
+        color: #000;
+        outline: none;
+        box-shadow: 2px 4px 16px -3px #000;
+      }
+    }
+  }
+}
+.nav {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
-  &-title {
-    color: color('primary');
-    font-family: 'Roboto-Bold';
-    font-size: 25px;
-    text-align: center;
-    display: block;
-    margin-bottom: 20px;
+  width: 100px;
+  height: 100%;
+  overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 0 100% 100% 0;
+    box-shadow: inset -2px 0px 0px 0px #000;
+    top: 0;
+    right: 0px;
+    width: 200px;
+    height: 100%;
+    background: #1e2124;
+    opacity: 0.8;
+    z-index: 100;
   }
-  &-list {
-    &__item {
-      font-family: 'Roboto-Regular';
-      color: color('gray');
-      display: inline-block;
-      padding: 10px 15px;
-      border-radius: 20px;
-      transition: all 0.15s ease-in;
-      &:hover {
-        background: color('dark-grey');
-      }
-      &:focus {
-        background: color('dark-grey');
-        outline: none;
-      }
+  &-arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: #242c33;
+    top: 50%;
+    left: 20px;
+    z-index: 101;
+    border-radius: 25px;
+    box-shadow: 2px 4px 16px -3px #000;
+    &:focus {
+      outline: none;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 17px;
+      width: 11px;
+      height: 2px;
+      background: #fff;
+      transform: rotate(-45deg);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 27px;
+      left: 17px;
+      width: 11px;
+      height: 2px;
+      background: #fff;
+      transform: rotate(45deg);
     }
   }
 }

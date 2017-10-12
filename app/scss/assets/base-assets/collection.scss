@@ -1,0 +1,120 @@
+// START: collection
+.collection-wrapper {
+  margin-top: 15em;
+}
+.collection {
+  width: 30em;
+  height: 20em;
+  display: inline-block;
+  background: #ccc;
+  position: relative;
+  z-index: 9;
+  margin: 20px;
+  &:hover {
+    .collection-back {
+      &__one {
+        top: 5px;
+        left: -5px;
+      }
+      &__two {
+        top: 10px;
+        left: -10px;
+      }
+    }
+  }
+  &:focus {
+    outline: none;
+    .collection-back {
+      &__one {
+        top: 5px;
+        left: -5px;
+      }
+      &__two {
+        top: 10px;
+        left: -10px;
+      }
+    }
+  }
+  &-back {
+    &__one {
+      position: absolute;
+      top: 10px;
+      left: -10px;
+      background: #242c33;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 10px 0px black;
+      transition: all 0.15s ease-in;
+    }
+    &__two {
+      position: absolute;
+      top: 20px;
+      left: -20px;
+      background: #161f26;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      box-shadow: 0 0 10px 0px black;
+      transition: all 0.15s ease-in;
+    }
+  }
+  &-holder {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    box-shadow: 0 0 10px 0px black;
+    padding-top: 30%;
+    text-align: center;
+    background: url('http://img.wennermedia.com/article-leads-horizontal/rs-242957-xmen.jpg');
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+  &-title {
+    text-transform: uppercase;
+    color: color('active');
+    font-family: 'Roboto-Bold';
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 10px;
+  }
+  &-subtitle {
+    font-family: 'Roboto-Regular';
+    color: color('primary');
+    font-size: 1.4em;
+    display: block;
+  }
+  &-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    padding-top: 0.6em;
+    background: color('gray');
+    &__icon {
+      background: url('../../../img/two-layers.svg');
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-size: cover;
+    }
+    &__count {
+      font-family: 'Roboto-Regular';
+      color: color('primary');
+      font-size: 1.1em;
+    }
+  }
+}
+
+
+// END: collection

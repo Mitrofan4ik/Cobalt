@@ -1,7 +1,8 @@
 $colors: ( 
     'primary': #fff,
-    'gray': #ccc,
-    'dark-grey': #4a4a4a
+    'gray': #949492,
+    'dark-grey': #4a4a4a,
+    'active': #ffde39
 );
 
 @function color($color) {

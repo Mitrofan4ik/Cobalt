@@ -7,15 +7,29 @@
 html,
 body {
     height: 100%;
+    font-size: 100%;
 }
 
 .wrapper {
+    position: relative;
     display: block;
     width: 100%;
     height: 100%;
-    padding-left: 220px;
-    padding-top: 50px;
-    background: #F0F8FF;
+    padding-left: 30em;
+    padding-top: 3.2em;
+    z-index: 1;
+    background-size: cover;
+    background: url('https://lc-www-live-s.legocdn.com/r/www/r/catalogs/-/media/catalogs/activities/star%20wars/2016/posters/the%20force%20awakens%20video%20game%20may%20the%20fourth/douglas_may4th_poster_webpreview_1488x838_may.jpg?l.r2=853401640');
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: url('http://alanpride.com/admin/images/BG_Radial_gradient.png');
+    }
 }
 
 .clearfix {
