@@ -66,6 +66,7 @@
     box-shadow: 0 0 10px 0px black;
     padding-top: 30%;
     text-align: center;
+    overflow: hidden;
     background: url('http://img.wennermedia.com/article-leads-horizontal/rs-242957-xmen.jpg');
     &::after {
       content: '';
@@ -102,7 +103,7 @@
     padding-top: 0.6em;
     background: color('gray');
     &__icon {
-      background: url('../../../img/two-layers.svg');
+      background: url('../img/two-layers.svg');
       width: 16px;
       height: 16px;
       display: inline-block;

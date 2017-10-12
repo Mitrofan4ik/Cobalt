@@ -10,18 +10,18 @@
   left: 0;
   z-index: 97;
   display: block;
-  &::after {
-    content: '';
-    position: absolute;
-    border-radius: 0 100% 100% 0;
-    top: 0;
-    right: 0px;
-    width: 370px;
-    height: 100%;
-    background: #1e2124;
-    opacity: 0.9;
-    z-index: -1;
-  }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   border-radius: 0 100% 100% 0;
+  //   top: 0;
+  //   right: 0px;
+  //   width: 370px;
+  //   height: 100%;
+  //   background: #1e2124;
+  //   opacity: 0.9;
+  //   z-index: -1;
+  // }
   &-title {
     color: color('primary');
     font-family: 'Roboto-Bold';
