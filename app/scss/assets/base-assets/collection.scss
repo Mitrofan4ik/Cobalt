@@ -109,11 +109,11 @@
       left: 0.6em;
     }
     &__icon {
-      background: url('../img/two-layers.png');
+      background: url('../img/two-squares.png');
       width: 16px;
       height: 16px;
       display: inline-block;
-      background-size: cover;
+      // background-size: cover;
     }
     &__count {
       font-family: 'Roboto-Regular';
