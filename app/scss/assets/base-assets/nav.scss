@@ -2,9 +2,9 @@
 .nav-hidden {
   width: 370px;
   height: 100%;
-  padding: 30px 15px;
-  padding-left: 110px;
-  padding-top: 160px;
+  padding: 7em 2em;
+  padding-top: 13em;
+  padding-left: 9em;
   position: fixed;
   top: 0;
   left: 0;
@@ -34,7 +34,7 @@
     &__item {
       font-family: 'Roboto-Bold';
       color: color('gray');
-      display: table;
+      display: inline-block;
       padding: 10px 15px;
       border-radius: 20px;
       transition: all 0.15s ease-in;
