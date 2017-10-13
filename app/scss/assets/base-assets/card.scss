@@ -2,52 +2,57 @@
 .card {
   width: 200px;
   height: 300px;
-  margin: 0 20px 20px 20px;
+  margin: 0 10px 20px 10px;
   display: inline-block;
   position: relative;
   z-index: 0;
   transition: all 0.15s ease-in;
   box-shadow: none;
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   width: 200px;
-  //   height: 300px;
-  //   top: 0px;
-  //   left: 0px;
-  //   display: block;
-  //   background-color: yellow;
-  //   z-index: -1;
-  //   transition: all 0.15s ease-in;
-  // }
   &:focus {
-    box-shadow: -9px 9px yellow;
+    box-shadow: -9px 9px color('active');
+    .card-title {
+      bottom: 2.2em;
+      left: 1em;
+    }
+    .card-title-hide {
+      opacity: 1;
+    }
   }
   &:hover {
-    // &::after {
-    //   content: '';
-    //   position: absolute;
-    //   top: 10px;
-    //   left: -10px;
-    //   display: block;
-    //   background-color: yellow;
-    // }
-    box-shadow: -9px 9px yellow;
+    box-shadow: -9px 9px color('active');
+    .card-title {
+      bottom: 2.2em;
+      left: 1em;
+    }
+    .card-title-hide {
+      opacity: 1;
+    }
   }
   &-body {
-    // background: url(../../img/images.jpg);
-    background-color: color('dark-grey');
+    background: url('https://i.pinimg.com/236x/63/9a/0a/639a0a64cb485e51af053e6403a00289--captain-america--steve-rogers.jpg');
     width: 100%;
     height: 100%;
     position: relative;
   }
   &-title {
     font-family: 'Roboto-Medium';
-    font-size: 18px;
-    color: color('gray');
+    font-size: 15px;
+    text-transform: uppercase;
+    color: color('active');
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 1em;
+    left: 1em;
+    transition: all 0.15s ease-in;
+  }
+  &-title-hide {
+    font-family: 'Roboto-Medium';
+    font-size: 14px;
+    color: color('primary');
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    opacity: 0;
+    transition: all 0.15s ease-in;
   }
 }
 // END: card
