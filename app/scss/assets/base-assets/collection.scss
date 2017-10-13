@@ -1,13 +1,8 @@
 // START: collection
 .collection-wrapper {
   margin-top: 15em;
-  overflow: auto;
-  overflow-y: hidden;
   margin-top: 15em;
   height: 380px;
-  &__overflow {
-    width: 3000px;
-  }
 }
 .collection {
   width: 30em;
@@ -73,7 +68,7 @@
     box-shadow: 0 0 10px 0px black;
     text-align: center;
     overflow: hidden;
-    display: table;
+    display: block;
     background: url('http://img.wennermedia.com/article-leads-horizontal/rs-242957-xmen.jpg');
     &::after {
       content: '';
@@ -93,7 +88,7 @@
     font-family: 'Roboto-Bold';
     font-size: 0.9em;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.4em;
   }
   &-subtitle {
     font-family: 'Roboto-Regular';
@@ -107,8 +102,12 @@
     right: 0;
     width: 60px;
     height: 40px;
-    padding-top: 0.6em;
     background: color('gray');
+    &-holder {
+      position: absolute;
+      top: 0.6em;
+      left: 0.6em;
+    }
     &__icon {
       background: url('../img/two-layers.png');
       width: 16px;
@@ -123,8 +122,9 @@
     }
   }
   &-text {
-    display: table-cell;
-    vertical-align: middle;
+    position: absolute;
+    top: 9em;
+    left: 11em;
   }
 }
 
