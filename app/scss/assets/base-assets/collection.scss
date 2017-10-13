@@ -1,13 +1,13 @@
 // START: collection
 .collection-wrapper {
-  height: 380px;
+  height: 28em;
   position: absolute;
-  right: 0;
+  right: -10em;
   top: 18em;
 }
 .collection {
-  width: 30em;
-  height: 20em;
+  width: 37em;
+  height: 24.6em;
   display: inline-block;
   background: #ccc;
   position: relative;
@@ -63,9 +63,9 @@
   }
   &-holder {
     position: relative;
-    width: 30em;
+    width: 37em;
+    height: 24.6em;
     z-index: 1;
-    height: 20em;
     box-shadow: 0 0 10px 0px black;
     text-align: center;
     overflow: hidden;
