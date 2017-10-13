@@ -2,9 +2,6 @@
 .nav-hidden {
   width: 45em;
   height: 100%;
-  padding: 7em 2em;
-  padding-top: 13em;
-  padding-left: 20em;
   position: fixed;
   top: 0;
   left: 0;
@@ -23,6 +20,11 @@
   //   opacity: 0.9;
   //   z-index: -1;
   // }
+  &__holder {
+    position: absolute;
+    top: 15em;
+    left: 20em;
+  }
   &-title {
     color: color('primary');
     font-family: 'Roboto-Bold';
