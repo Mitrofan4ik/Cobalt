@@ -1,0 +1,21 @@
+.time {
+  position: absolute;
+  top: 4em;
+  right: 4em;
+  text-align: right;
+  &-count {
+    color: color('primary');
+    font-family: 'Roboto-Bold';
+    font-size: 2.2em;
+    display: block;
+    margin-bottom: 0.2em;
+  }
+  &-day {
+    color: color('primary');
+    font-family: 'Roboto-Regular';
+    font-size: 0.8em;
+    display: block;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+}
