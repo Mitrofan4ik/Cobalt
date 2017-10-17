@@ -31,12 +31,15 @@ if (myElem !== null) {
       dropDownType.innerHTML=this.getAttribute('data-sort');
         dropDownList.classList.toggle('active');
     });
-  }
-
-
+  };
   dropDown.addEventListener("click", function() {  
     dropDownList.classList.toggle('active');
   });
+} else {
+  var collectionsMenuItem = document.getElementById('jsCollections');
+  collectionsMenuItem.addEventListener('click', function(){
+    collectionsMenuItem.classList.add('active');
+  })
 }
 // DATE TIME
 var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -63,11 +66,12 @@ document.getElementById('date').innerHTML =
 startTime()
 
 // NAV LIST 
-var navListItem = document.getElementsByClassName("nav-hidden-list__item");
-navListItem.addEventListener("click", function() {
-  navListItem.classList.remove('active');
-  navListItem.classList.add('active');
-});
+// var navListItem = document.getElementsByClassName("nav-hidden-list__item")[0];
+// console.log(document.getElementsByClassName("nav-hidden-list__item")[0]);
+// navListItem.addEventListener("click", function() {  
+//   // navListItem.classList.remove('active');
+//   navListItem.classList.add('active');
+// });
 // function setFocusToTextBox(){
 //   var textbox = document.getElementById("jsFeatured").focus();
 //   textbox.focus();
