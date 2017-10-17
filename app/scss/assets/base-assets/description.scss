@@ -95,9 +95,8 @@
     }
   }
   &-list {
-    position: absolute;
-    z-index: 9;
-    top: 2.7em;
+    position: relative;
+    top: 0;
     left: 0;
     width: 88%;
     transform: translateX(16px);
