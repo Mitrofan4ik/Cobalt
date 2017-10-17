@@ -55,6 +55,21 @@
           box-shadow: 2px 4px 16px -3px #000;
         }
       }
+      &.active {
+        span {
+          border-radius: 20px;
+          padding: 10px 15px;
+          font-size: 20px;
+          display: inline-block;
+          font-family: 'Roboto-Bold';
+          color: color('gray');
+          transition: all 0.15s ease-in;
+          background: color('active');
+          color: #000;
+          font-family: 'Roboto-Bold';
+          box-shadow: 2px 4px 16px -3px #000;
+        }
+      }
       &:focus {
         outline: none;
       }
