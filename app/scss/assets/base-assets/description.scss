@@ -1,6 +1,6 @@
 // START: description
 .description {
-  padding: 20px;  
+  padding: 20px 0;  
   &-text {
     &__title {
       font-family: 'Roboto-Bold';
@@ -52,7 +52,7 @@
 .sort-card {
   display: inline-block;
   position: absolute;
-  right: 0;
+  right: 0.9em;
   top: 1.3em;
   &__title {
     font-family: 'Roboto-Bold';
@@ -99,7 +99,6 @@
     top: 0;
     left: 0;
     width: 13.8em;
-    // transform: translateX(16px);
     display: none;
     margin: 0 auto;
     z-index: 1;
