@@ -2,7 +2,7 @@
 .collection-wrapper {
   height: 28em;
   position: absolute;
-  left: 50em;
+  left: 15em;
   top: 18em;
   padding: 20px;
   overflow: hidden;
@@ -73,7 +73,6 @@
     text-align: center;
     overflow: hidden;
     display: block;
-    background: url('http://img.wennermedia.com/article-leads-horizontal/rs-242957-xmen.jpg');
     &::after {
       content: '';
       position: absolute;
@@ -84,6 +83,18 @@
       background: #000;
       opacity: 0.5;
       z-index: -1;
+    }
+    &.collection-bg1 {
+      background-size: cover;
+      background: url('https://cdn.vox-cdn.com/thumbor/1Tf2qV8_N6pjS2EpD-hc9HyqpEo=/0x0:810x987/1200x800/filters:focal(341x536:469x664)/cdn.vox-cdn.com/uploads/chorus_image/image/51357975/Logan-Poster-Hugh-Jackman-Wolverine-3.0.0.jpg') no-repeat center center;
+    }
+    &.collection-bg2 {
+      background-size: cover;
+      background: url('https://www.samaa.tv/wp-content/uploads/2016/02/frozen.jpg') no-repeat center center;
+    }
+    &.collection-bg3 {
+      background-size: cover;
+      background: url('https://cdn.vox-cdn.com/thumbor/nWGjg39CW8TDciTxJ3qsSKJrN7w=/0x0:1381x1019/1200x800/filters:focal(581x400:801x620)/cdn.vox-cdn.com/uploads/chorus_image/image/54857225/xalien_covenant_fill.jpg.pagespeed.ic.rPyCbS72Kx.0.jpg')no-repeat center center;
     }
   }
   &-title {
