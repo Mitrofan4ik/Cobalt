@@ -96,10 +96,11 @@
   }
   &-list {
     position: absolute;
-    width: 88%;
     z-index: 9;
     top: 2.7em;
-    left: 1em;
+    left: 0;
+    width: 88%;
+    transform: translateX(16px);
     display: none;
     z-index: 1;
     &.active {
