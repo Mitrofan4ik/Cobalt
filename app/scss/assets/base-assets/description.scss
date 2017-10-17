@@ -98,9 +98,10 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 88%;
-    transform: translateX(16px);
+    width: 13.8em;
+    // transform: translateX(16px);
     display: none;
+    margin: 0 auto;
     z-index: 1;
     &.active {
       display: block;
