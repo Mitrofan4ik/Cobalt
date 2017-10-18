@@ -66,11 +66,33 @@ document.getElementById('date').innerHTML =
 startTime()
 
 // NAV LIST 
-// var navListItem = document.getElementsByClassName("nav-hidden-list__item")[0];
-// console.log(document.getElementsByClassName("nav-hidden-list__item")[0]);
+// var navListItem = document.getElementsByClassName("navHiddenItem")[0];
+// var navListItemUpper = document.getElementsByClassName("nav-hidden-list__item")[0];
+
+// for (var i = 0; i < navListItem.length; i++) {  
+//   navListItem[i].addEventListener("click", function() {       
+//     navListItemUpper.classList.remove('active');
+//     navListItemUpper.classList.add('active');
+//   });
+// };
+
+// var navList = document.getElementById("jsNavList");
+//   navList.addEventListener("click", function(event) {
+//   var target = event.target;
+
+//   var navlistItem = target.closest('nav-hidden-list__item');
+
+//   if (navlistItem.contains(navlistItem)) {
+//     navlistItem.classList.remove('active');
+//     navlistItem.classList.add('active');
+//   } else {
+//     navlistItem.classList.remove('active');
+//     navlistItem.classList.add('active');
+//   }
+// });
 // navListItem.addEventListener("click", function() {  
-//   // navListItem.classList.remove('active');
-//   navListItem.classList.add('active');
+//   navListItemUpper.classList.remove('active');
+//   navListItemUpper.classList.add('active');
 // });
 // function setFocusToTextBox(){
 //   var textbox = document.getElementById("jsFeatured").focus();
