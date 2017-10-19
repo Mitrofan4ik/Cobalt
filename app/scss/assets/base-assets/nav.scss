@@ -84,6 +84,9 @@
   display: inline-block;
   background: url('../img/bg_fx_innerpage.png') no-repeat;
   background-size: cover;
+  @media screen and (min-width: 3840px) {
+    width: 290px;
+  }
   @media screen and (max-width: 1366px) {
     width: 105px;
   }
@@ -94,14 +97,20 @@
     position: absolute;
     background: #242c33;
     top: 50%;
-    left: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 101;
     border-radius: 25px;
     box-shadow: 2px 4px 16px -3px #000;
-    @media screen and (min-width: 1920px) and (max-height: 1080px) {
+    @media screen and (min-width: 1920px) {
       width: 60px;
       height: 60px;
       border-radius: 30px;
+    }
+    @media screen and (min-width: 3840px) {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
     }
     &:focus {
       outline: none;
@@ -116,9 +125,15 @@
       height: 2px;
       background: #fff;
       transform: rotate(-45deg);
-      @media screen and (min-width: 1920px) and (max-height: 1080px) {
+      @media screen and (min-width: 1920px) {
         top: 25px;
         left: 22px;
+      }
+      @media screen and (min-width: 3840px) {
+        top: 40px;
+        left: 32px;
+        width: 32px;
+        height: 3px;
       }
     }
     &::after {
@@ -130,11 +145,18 @@
       height: 2px;
       background: #fff;
       transform: rotate(45deg);
-      @media screen and (min-width: 1920px) and (max-height: 1080px) {
+      @media screen and (min-width: 1920px) {
         top: 32px;
         left: 22px;
+      }
+      @media screen and (min-width: 3840px) {
+        top: 61px;
+        left: 32px;
+        width: 32px;
+        height: 3px;
       }
     }
   }
 }
 // END: nav
+

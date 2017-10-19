@@ -7,6 +7,9 @@
   @media screen and (min-width: 1920px) {
     font-size: 20px;
   }
+  @media screen and (min-width: 3840px) {
+    font-size: 40px;
+  }
   &-count {
     color: color('primary');
     font-family: 'Roboto-Bold';
