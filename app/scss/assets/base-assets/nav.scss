@@ -101,7 +101,7 @@
     z-index: 101;
     border-radius: 25px;
     box-shadow: 2px 4px 16px -3px #000;
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1919px) {
       width: 60px;
       height: 60px;
       border-radius: 30px;
@@ -124,7 +124,7 @@
       height: 2px;
       background: #fff;
       transform: rotate(-45deg);
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1919px) {
         top: 25px;
         left: 22px;
       }
@@ -144,7 +144,7 @@
       height: 2px;
       background: #fff;
       transform: rotate(45deg);
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1919px) {
         top: 32px;
         left: 22px;
       }
