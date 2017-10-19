@@ -9,6 +9,10 @@
   overflow: hidden;
   white-space: nowrap;
   transform: translate(-50%, 0);
+  @media screen and (max-width: 1366px) {
+    left: 100%;
+    height: 24em;
+  }
   .collection-inner-title {
     display: none;
   }
@@ -41,6 +45,10 @@
   // for move collection item use transform with a negative value for example : transform: translateX(-640px);
   transform: translateX(0);
   // add class hidden to .collection if navigation not on Collections-nav-list-item
+  @media screen and (max-width: 1366px) {
+    width: 30em;
+    height: 20em;
+  }
   &.hidden {
     display: none;
   }
@@ -101,6 +109,10 @@
     text-align: center;
     overflow: hidden;
     display: block;
+    @media screen and (max-width: 1366px) {
+      width: 30em;
+      height: 20em;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -166,8 +178,9 @@
   }
   &-text {
     position: absolute;
-    top: 11em;
-    left: 14em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
