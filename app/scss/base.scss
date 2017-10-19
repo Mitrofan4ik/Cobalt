@@ -113,6 +113,7 @@ body {
             background: url('../img/ruble-currency-sign-black.png');
         }
     }
+    // add class disable if button was pressed
     &.disable {
         display: none;
     }
