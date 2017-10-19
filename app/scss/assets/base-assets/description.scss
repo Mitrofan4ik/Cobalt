@@ -1,6 +1,12 @@
 // START: description
 .description {
   padding: 20px 0;  
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 1366px) {
+    font-size: 14px;
+  }
   &-text {
     &__title {
       font-family: 'Roboto-Bold';
@@ -91,6 +97,14 @@
       vertical-align: middle;
       background: url('../img/down-arrow.png');
       margin-left: 0.3em;
+      @media screen and (min-width: 1920px) {
+        width: 0.8em;
+        height: 0.8em;
+      }
+      @media screen and (max-width: 1366px) {
+        width: 1.2em;
+        height: 1.2em;
+      }
     }
     &.active {
       background: #242c33;

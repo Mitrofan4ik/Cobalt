@@ -9,6 +9,15 @@
   transition: all 0.15s ease-in;
   box-shadow: none;
   transform: translateY(0);
+  @media screen and (min-width: 1920px) and (max-height: 1080px) {
+    width: 280px;
+    height: 440px;
+  }
+  @media screen and (max-width: 1366px) {
+    width: 150px;
+    height: 230px;
+  }
+
 
   &:first-child {
     .card-body {
@@ -64,6 +73,13 @@
     position: relative;
     transition: all 0.15s ease-in;
     background-size: cover;
+    font-size: 14px;
+    @media screen and (min-width: 1920px) and (max-height: 1080px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 1366px) {
+      font-size: 12px;
+    }
     &.body-bg1 {
       background-size: cover;
       background: url('https://cdn.vox-cdn.com/thumbor/nWGjg39CW8TDciTxJ3qsSKJrN7w=/0x0:1381x1019/1200x800/filters:focal(581x400:801x620)/cdn.vox-cdn.com/uploads/chorus_image/image/54857225/xalien_covenant_fill.jpg.pagespeed.ic.rPyCbS72Kx.0.jpg') no-repeat center center;
@@ -107,7 +123,7 @@
   }
   &-title {
     font-family: 'Roboto-Medium';
-    font-size: 15px;
+    font-size: 1.1em;
     text-transform: uppercase;
     color: color('active');
     position: absolute;
@@ -118,7 +134,7 @@
   }
   &-title-hide {
     font-family: 'Roboto-Medium';
-    font-size: 14px;
+    font-size: 1em;
     color: color('primary');
     position: absolute;
     bottom: 1em;

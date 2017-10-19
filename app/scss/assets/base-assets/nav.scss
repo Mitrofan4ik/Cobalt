@@ -12,7 +12,7 @@
   height: 100%;
   // add display none if nav menu is hidden
   display: none;
-  background: url('../img/bg_fx_menu.png');
+  background: url('../img/bg_fx_menu.png') no-repeat;
   left: 3.6em;
   top: 0;
   position: absolute;
@@ -82,7 +82,11 @@
   height: 100%;
   overflow: hidden;
   display: inline-block;
-  background: url('../img/bg_fx_innerpage.png');
+  background: url('../img/bg_fx_innerpage.png') no-repeat;
+  background-size: cover;
+  @media screen and (max-width: 1366px) {
+    width: 105px;
+  }
 
   &-arrow {
     width: 50px;
@@ -94,6 +98,11 @@
     z-index: 101;
     border-radius: 25px;
     box-shadow: 2px 4px 16px -3px #000;
+    @media screen and (min-width: 1920px) and (max-height: 1080px) {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+    }
     &:focus {
       outline: none;
       box-shadow: 0 0 0 2px #ff0;
@@ -107,6 +116,10 @@
       height: 2px;
       background: #fff;
       transform: rotate(-45deg);
+      @media screen and (min-width: 1920px) and (max-height: 1080px) {
+        top: 25px;
+        left: 22px;
+      }
     }
     &::after {
       content: '';
@@ -117,6 +130,10 @@
       height: 2px;
       background: #fff;
       transform: rotate(45deg);
+      @media screen and (min-width: 1920px) and (max-height: 1080px) {
+        top: 32px;
+        left: 22px;
+      }
     }
   }
 }
