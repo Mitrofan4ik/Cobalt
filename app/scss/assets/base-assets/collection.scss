@@ -41,24 +41,25 @@
     }
   }
   // add collection-wrapper--title if navigation not on Collections-nav-list-item
-  &--title {
-    display: block;
-    height: auto;
-    font-size: 20px;
-    left: 35%;
-    top: 50%;
-    transform: translate(25%, -50%);
-    @media screen and (min-width: 3200px) {
-      left: 40%;
-    }
-    .collection-inner-title {
-      display: block;
-      span {
-        font-family: 'Roboto-Bold';
-        color: color('primary');
-        font-size: 5em;
-      }
-    }
+  // &--title {
+  //   display: block;
+  //   height: auto;
+  //   font-size: 20px;
+  //   left: 35%;
+  //   top: 50%;
+  //   transform: translate(25%, -50%);
+  //   @media screen and (min-width: 3200px) {
+  //     left: 40%;
+  //   }
+  // }
+}
+
+.collection-inner-title {
+  display: block;
+  span {
+    font-family: 'Roboto-Bold';
+    color: color('primary');
+    font-size: 5em;
   }
 }
 
