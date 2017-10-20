@@ -45,7 +45,6 @@ body {
         }
     }
 }
-
 .clearfix {
     &:after {
         display: block;
@@ -53,7 +52,6 @@ body {
         content: '';
     }
 }
-
 .content-container {
     width: 69em;
     position: absolute;
@@ -69,7 +67,6 @@ body {
         transform: translate(-50%, 3em);
     }
 }
-
 .myContainer {
     position: relative;
     max-width: gridValue('container');
