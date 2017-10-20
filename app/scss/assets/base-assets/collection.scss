@@ -61,6 +61,19 @@
     }
   }
 }
+
+.push-collection {
+  animation: pushCollection 2s ease-in-out alternate forwards;
+}
+
+@keyframes pushCollection {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-80%, -50%);
+  }
+}
 .collection {
   width: 37em;
   height: 24.6em;
