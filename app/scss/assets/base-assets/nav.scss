@@ -7,24 +7,56 @@
   z-index: 999;
 }
 .nav-hidden {
-  width: 43em;
+  width: 44em;
   height: 100%;
   // add display none if nav menu is hidden
   display: block;
   background: url('../img/bg_fx_menu.png') no-repeat;
-  left: 3.6em;
+  background-position: right center;
+  background-size: cover;
+  left: 3.4em;
   top: 0;
   position: absolute;
-  @media screen and (min-width: 3200px) {
-    left: 7em;
-    width: 96em;
-    background-size: contain;
+  @media screen and (max-width: 3840px) {
+    width: 90em;
+    left: 6em;
+  }
+  @media screen and (max-width: 3355px) {
+    width: 89em;
+    left: 6em;
+  }
+  @media screen and (max-width: 3200px) {
+    left: 1.5em;
+    width: 58em;
+  }
+  @media screen and (max-width: 2560px), screen and (max-height: 1600px) {
+    left: 0.8em;
+    width: 64.2em;
+  }
+  @media screen and (max-width: 2200px) {
+    left: 2.4em;
+    width: 50em;
+  }
+  @media screen and (max-width: 1920px) {
+    left: 3.5em;
+    width: 44em;
+  }
+  @media screen and (max-width: 1800px) {
+    left: 4em;
+    width: 41em;
+  }
+  @media screen and (max-width: 1550px) {
+    left: 2.1em;
+    width: 37em;
   }
   @media screen and (max-width: 1366px) {
-    background-size: contain;
-    left: 2.5em;
-    width: 32em;
+    left: 2.1em;
   }
+  @media screen and (max-width: 1320px) {
+    left: 3.3em;
+    width: 31em;
+  }
+
   &__holder {
     font-size: 16px;
     position: absolute;
@@ -111,19 +143,13 @@
   display: inline-block;
   background: url('../img/back_fx.svg') no-repeat;
   background-size: cover;
+  background-position: right center;
   @media screen and (min-width: 3200px) {
     width: 290px;
   }
-  @media screen and (max-width: 1366px) {
-    width: 105px;
+  @media screen and (max-width: 1550px) {
+    width: 115px;
   }
-  @media screen and (max-width: 1280px) {
-    width: 99px;
-  }
-  @media screen and (max-height: 760px) {
-    width: 99px;
-  }
-
   &-arrow {
     width: 50px;
     height: 50px;
