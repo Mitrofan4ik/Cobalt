@@ -7,23 +7,48 @@
   z-index: 999;
 }
 .nav-hidden {
-  width: 43em;
+  width: 44em;
   height: 100%;
   // add display none if nav menu is hidden
   display: block;
   background: url('../img/bg_fx_menu.png') no-repeat;
-  left: 3.6em;
+  background-position: right center;
+  background-size: cover;
+  left: 3.4em;
   top: 0;
   position: absolute;
-  @media screen and (min-width: 3200px) {
-    left: 7em;
-    width: 96em;
-    background-size: contain;
+  
+  @media screen and (max-width: 1600px) {
+    left: 4.4em;
+    width: 38em;
+  }
+  @media screen and (max-width: 1500px) {
+      left: 3.1em;
+      width: 32em;
   }
   @media screen and (max-width: 1366px) {
-    background-size: contain;
-    left: 2.5em;
-    width: 32em;
+    left: 3.1em;
+  }
+  @media screen and (max-height: 2160px) {
+    left: 5em;
+    width: 87em;
+  }
+  @media screen and (max-height: 1600px) {
+    left: 0.8em;
+    width: 64.2em;
+  }
+  @media screen and (max-height: 1366px) {
+    left: 1.4em;
+    width: 58em;
+  }
+  @media  screen and (max-height: 910px) {
+    left: 3.1em;
+    width: 46em;
+  }
+
+  @media  screen and (max-height: 720px) {
+    width: 37em;
+    left: 4.4em;
   }
   &__holder {
     font-size: 16px;
@@ -33,6 +58,9 @@
     transform: translate(-50%, -50%);
     @media screen and (min-width: 3200px) {
       font-size: 40px;
+    }
+    @media screen and (max-height: 720px) {
+      left: 60%;
     }
   }
   &-title {
@@ -111,17 +139,21 @@
   display: inline-block;
   background: url('../img/bg_fx_innerpage.png') no-repeat;
   background-size: cover;
+  background-position: right center;
   @media screen and (min-width: 3200px) {
     width: 290px;
   }
   @media screen and (max-width: 1366px) {
     width: 105px;
   }
-  @media screen and (max-width: 1280px) {
-    width: 99px;
+  @media screen and (max-width: 1500px) {
+    width: 115px;
   }
-  @media screen and (max-height: 760px) {
-    width: 99px;
+  @media screen and (max-height: 2160px) {
+    width: 265px;
+  }
+  @media screen and (max-height: 1600px) {
+    width: 148px;
   }
 
   &-arrow {
