@@ -18,38 +18,63 @@
   top: 0;
   position: absolute;
   
-  @media screen and (max-width: 1600px) {
-    left: 4.4em;
-    width: 38em;
+  // @media screen and (max-height: 2160px) {
+  //   left: 5em;
+  //   width: 87em;
+  // }
+  // @media screen and (max-height: 1600px) {
+  //   left: 0.8em;
+  //   width: 64.2em;
+  // }
+  // @media screen and (max-height: 1366px) {
+  //   left: 1.4em;
+  //   width: 58em;
+  // }
+  // @media  screen and (max-height: 910px) {
+  //   left: 3.1em;
+  //   width: 46em;
+  // }
+
+  // @media  screen and (max-height: 720px) {
+  //   width: 37em;
+  //   left: 4.4em;
+  // }
+  @media screen and (max-width: 3840px) {
+    width: 90em;
+    left: 6em;
   }
-  @media screen and (max-width: 1500px) {
-      left: 3.1em;
-      width: 32em;
+  @media screen and (max-width: 3355px) {
+    width: 89em;
+    left: 6em;
   }
-  @media screen and (max-width: 1366px) {
-    left: 3.1em;
-  }
-  @media screen and (max-height: 2160px) {
-    left: 5em;
-    width: 87em;
-  }
-  @media screen and (max-height: 1600px) {
-    left: 0.8em;
-    width: 64.2em;
-  }
-  @media screen and (max-height: 1366px) {
-    left: 1.4em;
+  @media screen and (max-width: 3200px) {
+    left: 1.5em;
     width: 58em;
   }
-  @media  screen and (max-height: 910px) {
-    left: 3.1em;
-    width: 46em;
+  @media screen and (max-width: 2200px) {
+    left: 2.4em;
+    width: 50em;
+  }
+  @media screen and (max-width: 1920px) {
+    left: 3.5em;
+    width: 44em;
+  }
+  @media screen and (max-width: 1800px) {
+    left: 4em;
+    width: 41em;
+  }
+  @media screen and (max-width: 1550px) {
+    left: 2.1em;
+    width: 37em;
+  }
+  // @media screen and (max-width: 1600px) {
+  //   left: 4.4em;
+  //   width: 38em;
+  // }
+  @media screen and (max-width: 1366px) {
+    left: 2.1em;
   }
 
-  @media  screen and (max-height: 720px) {
-    width: 37em;
-    left: 4.4em;
-  }
   &__holder {
     font-size: 16px;
     position: absolute;
@@ -59,9 +84,9 @@
     @media screen and (min-width: 3200px) {
       font-size: 40px;
     }
-    @media screen and (max-height: 720px) {
-      left: 60%;
-    }
+    // @media screen and (max-height: 720px) {
+    //   left: 60%;
+    // }
   }
   &-title {
     color: color('primary');
@@ -143,18 +168,15 @@
   @media screen and (min-width: 3200px) {
     width: 290px;
   }
-  @media screen and (max-width: 1366px) {
-    width: 105px;
-  }
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1550px) {
     width: 115px;
   }
-  @media screen and (max-height: 2160px) {
-    width: 265px;
-  }
-  @media screen and (max-height: 1600px) {
-    width: 148px;
-  }
+  // @media screen and (max-height: 2160px) {
+  //   width: 265px;
+  // }
+  // @media screen and (max-height: 1600px) {
+  //   width: 148px;
+  // }
 
   &-arrow {
     width: 50px;
