@@ -137,6 +137,18 @@
     }
   }
 }
+.hide-menu {
+  animation: hideMenu 1s ease-in-out normal;
+}
+
+@keyframes hideMenu {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-300%);
+  }
+}
 .nav {
   width: 148px;
   height: 100%;
