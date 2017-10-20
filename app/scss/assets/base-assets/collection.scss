@@ -27,6 +27,10 @@
   }
   .collection-inner-title {
     display: none;
+    font-size: 20px;
+    @media screen and (min-width: 2800px) {
+      font-size: 30px;
+    }
   }
   // add collection-wrapper--title if navigation not on Collections-nav-list-item
   &--title {
@@ -36,6 +40,9 @@
     left: 35%;
     top: 50%;
     transform: translate(25%, -50%);
+    @media screen and (min-width: 3200px) {
+      left: 40%;
+    }
     .collection-inner-title {
       display: block;
       span {
