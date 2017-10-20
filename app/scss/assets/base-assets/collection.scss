@@ -2,7 +2,7 @@
 .collection-wrapper {
   height: 28em;
   position: absolute;
-  // add left: 60% if collection more than 2 items and nav is hidden
+  // add left: 64% if collection more than 2 items and nav is hidden
   left: 95%;
   top: 50%;
   padding: 20px;
@@ -22,6 +22,7 @@
     height: 24em;
   }
   @media screen and (max-width: 1400px) {
+    // add left: 70% if collection more than 2 items and nav is hidden
     left: 100%;
     height: 24em;
   }
