@@ -33,6 +33,9 @@
   @media screen and (max-width: 1320px) {
     height: 19em;
   }
+  @media screen and (max-width: 1024px) {
+    height: 16em;
+  }
   .collection-inner-title {
     display: none;
     font-size: 20px;
@@ -109,6 +112,10 @@
   @media screen and (max-width: 1320px) {
     width: 25em;
     height: 15em;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 17em;
+    height: 12em;
   }
   &.hidden {
     display: none;
@@ -193,6 +200,10 @@
     @media screen and (max-width: 1320px) {
       width: 25em;
       height: 15em;
+    }
+    @media screen and (max-width: 1024px) {
+      width: 17em;
+      height: 12em;
     }
     
     &::after {
@@ -281,6 +292,9 @@
     transform: translate(-50%, -50%);
     @media screen and (min-width: 3840px) {
       font-size: 40px;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
     }
   }
 }
