@@ -37,7 +37,7 @@
     height: 16em;
   }
   .collection-inner-title {
-    display: none;
+    display: block;
     font-size: 20px;
     @media screen and (min-width: 2800px) {
       font-size: 30px;
