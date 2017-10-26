@@ -84,6 +84,24 @@
       @media screen and (min-width: 3200px) {
         margin-bottom: 25px;
       }
+      &:hover {
+        span {
+          background: color('active');
+          color: #000;
+          font-family: 'Roboto-Bold';
+          box-shadow: 2px 4px 16px -3px #000;
+        }
+      }
+      &:focus {
+        outline: none;
+        span {
+          outline: none;
+          background: color('active');
+          color: #000;
+          font-family: 'Roboto-Bold';
+          box-shadow: 2px 4px 16px -3px #000;
+        }
+      }
       span {
         border-radius: 20px;
         padding: 10px 15px;
@@ -97,19 +115,19 @@
           padding: 20px 30px;
           border-radius: 40px;
         }
-        &:hover {
-          background: color('active');
-          color: #000;
-          font-family: 'Roboto-Bold';
-          box-shadow: 2px 4px 16px -3px #000;
-        }
-        &:focus {
-          outline: none;
-          background: color('active');
-          color: #000;
-          font-family: 'Roboto-Bold';
-          box-shadow: 2px 4px 16px -3px #000;
-        }
+        // &:hover {
+        //   background: color('active');
+        //   color: #000;
+        //   font-family: 'Roboto-Bold';
+        //   box-shadow: 2px 4px 16px -3px #000;
+        // }
+        // &:focus {
+        //   outline: none;
+        //   background: color('active');
+        //   color: #000;
+        //   font-family: 'Roboto-Bold';
+        //   box-shadow: 2px 4px 16px -3px #000;
+        // }
       }
       &.active {
         span {
@@ -130,9 +148,6 @@
             border-radius: 40px;
           }
         }
-      }
-      &:focus {
-        outline: none;
       }
     }
   }
