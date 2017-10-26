@@ -88,6 +88,7 @@
   margin: 0 20px;
   // for move collection item use transform with a negative value for example : transform: translateX(-640px);
   transform: translateX(0);
+  transition: transform 0.5s linear;
   // add class hidden to .collection if navigation not on Collections-nav-list-item
   @media screen and (min-width: 2100px) {
     width: 45em;

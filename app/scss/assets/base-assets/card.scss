@@ -9,6 +9,7 @@
   transition: all 0.15s ease-in;
   box-shadow: none;
   transform: translateY(0);
+  transition: transform 0.5s linear;
 
   @media screen and (min-width: 3840px) {
     width: 520px;
