@@ -57,15 +57,6 @@
   // }
 }
 
-.collection-inner-title {
-  display: block;
-  span {
-    font-family: 'Roboto-Bold';
-    color: color('primary');
-    font-size: 5em;
-  }
-}
-
 .push-collection {
   animation: pushCollection 2s ease-in-out alternate forwards;
 }
