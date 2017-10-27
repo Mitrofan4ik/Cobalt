@@ -1,0 +1,32 @@
+.catalogue-wrapper {
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translate(0%, -50%);
+  z-index: 5;
+  @media screen and (max-width: 1024px) {
+    left: 55%;
+  }
+}
+
+.catalogue-inner-title {
+  display: block;
+  span {
+    font-family: 'Roboto-Bold';
+    color: color('primary');
+    font-size: 5em;
+    @media screen and (max-width: 3840px) {
+      font-size: 8em;
+    }
+    @media screen and (max-width: 2560px) {
+      font-size: 5em;
+    }
+    @media screen and (max-width: 1320px) {
+      font-size: 3em;
+    }
+  }
+}
