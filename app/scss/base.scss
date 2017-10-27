@@ -89,8 +89,8 @@ body {
                 height: 30px;
             }
             @media screen and (min-width: 2048px) {
-                width: 16px;
-                height: 16px;
+                width: 15px;
+                height: 15px;
             }
         }
     }
@@ -102,8 +102,8 @@ body {
         .money-icon {
             background: url('../img/ruble-currency-sign-black.png');
             @media screen and (min-width: 2048px) {
-                width: 16px;
-                height: 16px;
+                width: 15px;
+                height: 15px;
             }
             @media screen and (min-width: 3840px) {
                 background: url('../img/ruble-currency-sign-big-black.png');
@@ -119,8 +119,8 @@ body {
         .money-icon {
             background: url('../img/ruble-currency-sign-black.png');
             @media screen and (min-width: 2048px) {
-                width: 16px;
-                height: 16px;
+                width: 15px;
+                height: 15px;
             }
             @media screen and (min-width: 3840px) {
                 background: url('../img/ruble-currency-sign-big-black.png');
@@ -135,15 +135,15 @@ body {
     }
     .money-icon {
         background: url('../img/ruble-currency-sign.png');
-        width: 16px;
-        height: 16px;
+        width: 15px;
+        height: 15px;
         display: block;
         transition: all 0.15s ease-in;
         display: inline-block;
         background-size: cover;
         @media screen and (min-width: 2048px) {
-            width: 16px;
-            height: 16px;
+            width: 15px;
+            height: 15px;
         }
         @media screen and (min-width: 3840px) {
             background: url('../img/ruble-currency-sign-big-light.png');
