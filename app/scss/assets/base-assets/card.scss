@@ -20,28 +20,6 @@
     width: 150px;
     height: 230px;
   }
-
-
-  &:first-child {
-    .card-body {
-      .card-title {
-        display: block;
-      }
-      .card-title-hide {
-        display: block;
-      }
-    }
-  }
-  &:nth-child(2) {
-    .card-body {
-      .card-title {
-        display: block;
-      }
-      .card-title-hide {
-        display: block;
-      }
-    }
-  }
   &:focus {
     outline: none;
     .card-title {
@@ -139,7 +117,6 @@
     bottom: 1em;
     left: 1em;
     transition: all 0.15s ease-in;
-    display: none;
   }
   &-title-hide {
     font-family: 'Roboto-Medium';
@@ -150,7 +127,6 @@
     left: 1em;
     opacity: 0;
     transition: all 0.15s ease-in;
-    display: none;
   }
 }
 // END: card
