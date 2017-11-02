@@ -10,7 +10,7 @@
   white-space: nowrap;
   transform: translate(-50%, -50%);
   z-index: 5;
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  @media screen and (min-aspect-ratio: 5/3) {
     height: 50em;
   }
   @media screen and (min-width: 2100px) {
@@ -89,7 +89,7 @@
   transform: translateX(0);
   transition: transform 0.5s linear;
   // add class hidden to .collection if navigation not on Collections-nav-list-item
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  @media screen and (min-aspect-ratio: 5/3) {
     width: 45em;
     height: 90em;
   }
@@ -186,13 +186,9 @@
     overflow: hidden;
     display: block;
     transition: all 0.15s ease-in;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media screen and (min-aspect-ratio: 5/3) {
       width: 45em;
       height: 90em;
-    }
-    @media only screen and (max-device-pixel-ratio: 0.56) {
-      width: 25em;
-      height: 15em;
     }
     @media screen and (min-width: 2100px) {
       width: 45em;
