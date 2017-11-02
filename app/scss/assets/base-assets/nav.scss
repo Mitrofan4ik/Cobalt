@@ -6,6 +6,7 @@
   height: 100%;
   z-index: 999;
 }
+
 .nav-hidden {
   width: 44em;
   height: 100%;
@@ -30,7 +31,8 @@
     left: 1.5em;
     width: 58em;
   }
-  @media screen and (max-width: 2560px), screen and (max-height: 1600px) {
+  @media screen and (max-width: 2560px),
+  screen and (max-height: 1600px) {
     left: 0.8em;
     width: 64.2em;
   }
@@ -57,7 +59,6 @@
     left: 3.3em;
     width: 31em;
   }
-
   &__holder {
     font-size: 16px;
     position: absolute;
@@ -152,8 +153,13 @@
     }
   }
 }
+
 .hide-menu {
   animation: hideMenu 2s ease-in-out alternate forwards;
+}
+
+.show-menu {
+  animation: showMenu 2s ease-in-out alternate forwards;
 }
 
 @keyframes hideMenu {
@@ -164,6 +170,16 @@
     transform: translateX(-300%);
   }
 }
+
+@keyframes showMenu {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 .nav {
   width: 148px;
   height: 100%;
@@ -245,5 +261,5 @@
     }
   }
 }
-// END: nav
 
+// END: nav
