@@ -86,6 +86,21 @@
       }
     }
   }
+  .description {
+    @media screen and (max-width: 1366px) {
+      font-size: 14px;
+    }
+  }
+  .sort-card {
+    &__title {
+      .icon {
+        @media screen and (max-width: 1366px) {
+          width: 1.1em;
+          height: 1em;
+        }
+      }
+    }
+  }
 }
 
 .viewport-max-1400 {
@@ -145,6 +160,24 @@
     &-row {
       @media screen and (max-width: 1920px) {
         height: 425px;
+      }
+    }
+  }
+}
+
+.viewport-min-1920 {
+  .description {
+    @media screen and (min-width: 1920px) {
+      font-size: 20px;
+    }
+  }
+  .sort-card {
+    &__title {
+      .icon {
+        @media screen and (min-width: 1920px) {
+          width: 0.8em;
+          height: 0.8em;
+        }
       }
     }
   }
@@ -219,7 +252,14 @@
 
 .viewport-max-3200 {}
 
-.viewport-max-3355 {}
+.viewport-max-3355 {
+  .nav-hidden {
+    @media screen and (max-width: 3355px) {
+      width: 89em;
+      left: 6em;
+    }
+  }
+}
 
 .viewport-max-3840 {
   .catalogue-inner-title {
@@ -234,6 +274,12 @@
       @media screen and (max-width: 3840px) {
         height: 1095px;
       }
+    }
+  }
+  .nav-hidden {
+    @media screen and (max-width: 3840px) {
+      width: 90em;
+      left: 6em;
     }
   }
 }
@@ -302,6 +348,54 @@
     &-text {
       @media screen and (min-width: 3840px) {
         font-size: 40px;
+      }
+    }
+  }
+  .description {
+    @media screen and (min-width: 3840px) {
+      font-size: 40px;
+    }
+    &-text {
+      &__count {
+        .icon {
+          @media screen and (min-width: 3840px) {
+            background: url('../img/layers-big.png');
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .sort-card {
+    @media screen and (min-width: 3840px) {
+      top: 0.3em;
+    }
+    &__title {
+      .icon {
+        @media screen and (min-width: 3840px) {
+          background: url('../img/down-chevron.png');
+          width: 0.8em;
+          height: 0.7em;
+        }
+      }
+      &:hover {
+        .icon {
+          @media screen and (min-width: 3840px) {
+            background: url('../img/down-chevron-big-black.png');
+            width: 0.8em;
+            height: 0.7em;
+          }
+        }
+      }
+      &:focus {
+        .icon {
+          @media screen and (min-width: 3840px) {
+            background: url('../img/down-chevron-big-black.png');
+            width: 0.8em;
+            height: 0.7em;
+          }
+        }
       }
     }
   }
