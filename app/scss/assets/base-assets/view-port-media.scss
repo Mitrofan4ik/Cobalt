@@ -1,4 +1,4 @@
-.viewport-max-1024 {
+.viewport-width-max-1024 {
   .catalogue-wrapper {
     @media screen and (max-width: 1024px) {
       left: 55%;
@@ -28,9 +28,9 @@
   }
 }
 
-.viewport-max-1110 {}
+.viewport-width-max-1110 {}
 
-.viewport-max-1280 {
+.viewport-width-max-1280 {
   .content {
     &-row {
       @media screen and (max-width: 1280px) {
@@ -40,7 +40,7 @@
   }
 }
 
-.viewport-max-1320 {
+.viewport-width-max-1320 {
   .catalogue-inner-title {
     span {
       @media screen and (max-width: 1320px) {
@@ -67,7 +67,7 @@
   }
 }
 
-.viewport-max-1366 {
+.viewport-width-max-1366 {
   .card {
     @media screen and (max-width: 1366px) {
       width: 150px;
@@ -103,7 +103,7 @@
   }
 }
 
-.viewport-max-1400 {
+.viewport-width-max-1400 {
   .collection-wrapper {
     @media screen and (max-width: 1400px) {
       // add left: 70% if collection more than 2 items and nav is hidden
@@ -113,7 +113,7 @@
   }
 }
 
-.viewport-max-1550 {
+.viewport-width-max-1550 {
   .collection-wrapper {
     @media screen and (max-width: 1550px) {
       height: 19em;
@@ -131,11 +131,17 @@
       }
     }
   }
+  .nav-hidden {
+    @media screen and (max-width: 1550px) {
+      left: 2.1em;
+      width: 37em;
+    }
+  }
 }
 
-.viewport-max-1180 {}
+.viewport-width-max-1180 {}
 
-.viewport-max-1800 {
+.viewport-width-max-1800 {
   .collection-wrapper {
     @media screen and (max-width: 1800px) {
       height: 24em;
@@ -153,9 +159,15 @@
       }
     }
   }
+  .nav-hidden {
+    @media screen and (max-width: 1800px) {
+      left: 4em;
+      width: 41em;
+    }
+  }
 }
 
-.viewport-max-1920 {
+.viewport-width-max-1920 {
   .content {
     &-row {
       @media screen and (max-width: 1920px) {
@@ -163,9 +175,15 @@
       }
     }
   }
+  .nav-hidden {
+    @media screen and (max-width: 1920px) {
+      left: 3.5em;
+      width: 44em;
+    }
+  }
 }
 
-.viewport-min-1920 {
+.viewport-width-min-1920 {
   .description {
     @media screen and (min-width: 1920px) {
       font-size: 20px;
@@ -183,7 +201,7 @@
   }
 }
 
-.viewport-max-2048 {
+.viewport-width-max-2048 {
   .content {
     &-row {
       @media screen and (max-width: 2048px) {
@@ -193,9 +211,16 @@
   }
 }
 
-.viewport-max-2200 {}
+.viewport-width-max-2200 {
+  .nav-hidden {
+    @media screen and (max-width: 2200px) {
+      left: 2.4em;
+      width: 50em;
+    }
+  }
+}
 
-.viewport-min-2100 {
+.viewport-width-min-2100 {
   .collection-wrapper {
     @media screen and (min-width: 2100px) {
       height: 34em;
@@ -215,7 +240,7 @@
   }
 }
 
-.viewport-max-2560 {
+.viewport-width-max-2560 {
   .catalogue-inner-title {
     span {
       @media screen and (max-width: 2560px) {
@@ -225,7 +250,7 @@
   }
 }
 
-.viewport-min-2800 {
+.viewport-width-min-2800 {
   .collection-wrapper {
     @media screen and (min-width: 2800px) {
       height: 41em;
@@ -250,9 +275,16 @@
   }
 }
 
-.viewport-max-3200 {}
+.viewport-width-max-3200 {
+  .nav-hidden {
+    @media screen and (max-width: 3200px) {
+      left: 1.5em;
+      width: 58em;
+    }
+  }
+}
 
-.viewport-max-3355 {
+.viewport-width-max-3355 {
   .nav-hidden {
     @media screen and (max-width: 3355px) {
       width: 89em;
@@ -261,7 +293,7 @@
   }
 }
 
-.viewport-max-3840 {
+.viewport-width-max-3840 {
   .catalogue-inner-title {
     span {
       @media screen and (max-width: 3840px) {
@@ -284,7 +316,7 @@
   }
 }
 
-.viewport-min-3840 {
+.viewport-width-min-3840 {
   .card {
     @media screen and (min-width: 3840px) {
       width: 520px;
@@ -397,6 +429,12 @@
           }
         }
       }
+    }
+  }
+  .nav-hidden {
+    @media screen and (max-width: 3840px) {
+      width: 90em;
+      left: 6em;
     }
   }
 }
