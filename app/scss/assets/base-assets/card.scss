@@ -10,7 +10,6 @@
   box-shadow: none;
   transform: translateY(0);
   transition: transform 0.5s linear;
-
   @media screen and (min-width: 3840px) {
     width: 520px;
     height: 840px;
@@ -19,6 +18,10 @@
   @media screen and (max-width: 1366px) {
     width: 150px;
     height: 230px;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 126px;
+    height: 183px;
   }
   &:focus {
     outline: none;
@@ -77,7 +80,7 @@
     }
     &.body-bg3 {
       background-size: cover;
-      background: url('https://moviefiles.alphacoders.com/534/poster-thumb-534.jpg') no-repeat center center;      
+      background: url('https://moviefiles.alphacoders.com/534/poster-thumb-534.jpg') no-repeat center center;
     }
     &.body-bg4 {
       background-size: cover;
@@ -129,4 +132,5 @@
     transition: all 0.15s ease-in;
   }
 }
+
 // END: card

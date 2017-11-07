@@ -183,7 +183,7 @@
     }
   }
   .collection-wrapper {
-    height: 60em;
+    height: 28em;
   }
   .content {
     display: block;
@@ -258,7 +258,7 @@
     }
   }
   .collection-wrapper {
-    height: 60em;
+    height: 28em;
   }
   .content {
     &-row {
@@ -342,6 +342,7 @@
   }
   .nav-hidden {
     left: 2.1em;
+    width: 37em;
   }
   .nav {
     width: 115px;
@@ -382,14 +383,7 @@
   }
   .clection-wrapper {
     height: 19em;
-    position: absolute;
-    left: 95%;
-    top: 50%;
-    padding: 20px;
-    overflow: hidden;
-    white-space: nowrap;
-    transform: translate(-50%, -50%);
-    z-index: 5;
+    left: 100%;
   }
   .collection {
     width: 25em;
@@ -468,8 +462,8 @@
 
 .viewport-width-1024 {
   .card {
-    width: 150px;
-    height: 230px;
+    width: 126px;
+    height: 183px;
     &-body {
       font-size: 12px;
     }
@@ -479,7 +473,7 @@
   }
   .catalogue-inner-title {
     span {
-      font-size: 5em;
+      font-size: 3em;
     }
   }
   .collection-wrapper {
@@ -517,16 +511,8 @@
     }
   }
   .nav-hidden {
-    height: 100%;
-    display: block;
-    background: url('../img/bg_fx_menu.png') no-repeat;
-    background-position: right center;
-    background-size: cover;
     left: 3.3em;
     width: 31em;
-    top: 0;
-    position: absolute;
-    z-index: 9;
   }
   .nav {
     width: 115px;
