@@ -382,10 +382,16 @@
       font-size: 3em;
     }
   }
-  .clection-wrapper {
+  .cllection-wrapper {
     top: 50%;
     height: 19em;
     left: 100%;
+    position: absolute;
+    z-index: 5;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    white-space: nowrap;
   }
   .collection {
     width: 25em;
@@ -480,6 +486,7 @@
     }
   }
   .collection-wrapper {
+    left: 102%;
     height: 16em;
   }
   .collection {
