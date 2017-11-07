@@ -315,6 +315,7 @@
   }
   .collection-wrapper {
     height: 19em;
+    left: 100%;
   }
   .collection {
     width: 27em;
@@ -382,6 +383,7 @@
     }
   }
   .clection-wrapper {
+    top: 50%;
     height: 19em;
     left: 100%;
   }
@@ -469,7 +471,8 @@
     }
   }
   .catalogue-wrapper {
-    left: 55%;
+    left: 100%;
+    height: 16em;
   }
   .catalogue-inner-title {
     span {
