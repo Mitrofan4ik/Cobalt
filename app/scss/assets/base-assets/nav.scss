@@ -155,11 +155,11 @@
 }
 
 .hide-menu {
-  animation: hideMenu 2s ease-in-out alternate forwards;
+  animation: hideMenu 1s ease-in-out alternate forwards;
 }
 
 .show-menu {
-  animation: showMenu 2s ease-in-out alternate forwards;
+  animation: showMenu 1s ease-in-out alternate forwards;
 }
 
 @keyframes hideMenu {
