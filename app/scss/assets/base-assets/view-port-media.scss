@@ -196,6 +196,55 @@
   }
 }
 
+.viewport-width-1920 {
+  .catalogue-inner-title {
+    span {
+      font-size: 5em;
+    }
+  }
+  .collection-wrapper {
+    height: 60em;
+  }
+  .content {
+    &-row {
+      height: 425px;
+    }
+  }
+  .description {
+    font-size: 20px;
+  }
+  .sort-card {
+    &__title {
+      .icon {
+        width: 0.8em;
+        height: 0.8em;
+      }
+    }
+  }
+  .nav-hidden {
+    left: 3.5em;
+    width: 44em;
+  }
+  .nav {
+    &-arrow {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      &::before {
+        top: 25px;
+        left: 22px;
+      }
+      &::after {
+        top: 32px;
+        left: 22px;
+      }
+    }
+  }
+  .time {
+    font-size: 20px;
+  }
+}
+
 .viewport-width-1280 {
   .card {
     width: 150px;
