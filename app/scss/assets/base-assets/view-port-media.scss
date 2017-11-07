@@ -145,6 +145,57 @@
   }
 }
 
+.viewport-width-2048 {
+  .catalogue-inner-title {
+    span {
+      font-size: 5em;
+    }
+  }
+  .collection-wrapper {
+    height: 60em;
+  }
+  .content {
+    display: block;
+    &-row {
+      height: 497px;
+    }
+  }
+  .description {
+    font-size: 20px;
+  }
+  .sort-card {
+    top: 0.3em;
+    &__title {
+      .icon {
+        width: 0.8em;
+        height: 0.8em;
+      }
+    }
+  }
+  .nav-hidden {
+    left: 2.4em;
+    width: 50em;
+  }
+  .nav {
+    &-arrow {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      &::before {
+        top: 25px;
+        left: 22px;
+      }
+      &::after {
+        top: 32px;
+        left: 22px;
+      }
+    }
+  }
+  .time {
+    font-size: 20px;
+  }
+}
+
 .viewport-width-1280 {
   .card {
     width: 150px;
