@@ -143,6 +143,37 @@
   .time {
     font-size: 40px;
   }
+  .content-container {
+    width: 176em;
+  }
+  .btn {
+    &:hover {
+      .money-icon {
+        background: url('../img/ruble-currency-sign-big-black.png');
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &:focus {
+      .money-icon {
+        background: url('../img/ruble-currency-sign-big-black.png');
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &.active {
+      .money-icon {
+        background: url('../img/ruble-currency-sign-big-black.png');
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .money-icon {
+      background: url('../img/ruble-currency-sign-big-light.png');
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
 
 .viewport-width-2048 {
@@ -193,6 +224,30 @@
   }
   .time {
     font-size: 20px;
+  }
+  .btn {
+    &:hover {
+      .money-icon {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &:focus {
+      .money-icon {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &.active {
+      .money-icon {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    .money-icon {
+      width: 15px;
+      height: 15px;
+    }
   }
 }
 
@@ -291,6 +346,16 @@
   .nav {
     width: 115px;
   }
+  .content-container {
+    width: 53.2em;
+    top: 3em;
+  }
+  .btn {
+    .money-icon {
+      width: 11px;
+      height: 11px;
+    }
+  }
 }
 
 .viewport-width-1280 {
@@ -359,6 +424,10 @@
       height: 346px;
     }
   }
+  .content-container {
+    top: 3em;
+    width: 53.2em;
+  }
   .description {
     font-size: 14px;
   }
@@ -388,6 +457,12 @@
   }
   .nav {
     width: 115px;
+  }
+  .btn {
+    .money-icon {
+      width: 11px;
+      height: 11px;
+    }
   }
 }
 
@@ -455,5 +530,14 @@
   }
   .nav {
     width: 115px;
+  }
+  .content-container {
+    width: 46em;
+  }
+  .btn {
+    .money-icon {
+      width: 11px;
+      height: 11px;
+    }
   }
 }
